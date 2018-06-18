@@ -6,7 +6,7 @@ import { Route } from 'react-router-dom';
 
 import store, { history } from './store';
 
-import Home from './screens/Home';
+import { Home } from './routes';
 
 import './App.css';
 

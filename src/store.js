@@ -31,11 +31,21 @@ const composedEnhancers = composeWithDevTools(
   ...enhancers
 );
 
+// We need this for react-snap
+
+const preloadedState = window.__PRELOADED_STATE__;
+delete window.__PRELOADED_STATE__;
+
 const store = createStore(
   rootReducer,
-  initialState,
+  preloadedState || initialState,
   composedEnhancers
 );
+
+// Tell react-snap how to save Redux state
+window.snapSaveState = () => ({
+  __PRELOADED_STATE__: store.getState()
+});
 
 sagaMiddleware.run(sagas);
 

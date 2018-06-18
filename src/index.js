@@ -1,12 +1,21 @@
 import React from 'react';
-import { render } from 'react-dom';
+import { render, hydrate } from 'react-dom';
+import { loadComponents, getState } from 'loadable-components';
 
-import registerServiceWorker from './registerServiceWorker';
+// import registerServiceWorker from './registerServiceWorker';
 
 import App from './App';
 
 const rootElement = document.getElementById('root');
 
-render(<App />, rootElement);
+window.snapSaveState = () => getState();
 
-registerServiceWorker();
+if (rootElement.hasChildNodes()) {
+  loadComponents().then(() => {
+    hydrate(<App />, rootElement);
+  });
+} else {
+  render(<App />, rootElement);
+}
+
+// registerServiceWorker();
