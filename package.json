@@ -4,32 +4,39 @@
   "private": false,
   "license": "MIT",
   "dependencies": {
+    "connected-react-router": "^4.5.0",
     "history": "^4.7.2",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
     "react-helmet": "^5.2.0",
     "react-redux": "^5.0.7",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "react-router-redux": "^5.0.0-alpha.9",
     "react-scripts": "2.0.5",
-    "redux": "^4.0.0",
-    "redux-devtools-extension": "^2.13.2",
-    "redux-saga": "^0.16.0",
+    "redux": "^4.0.1",
+    "redux-devtools-extension": "^2.13.5",
+    "redux-saga": "^0.16.2",
+    "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^0.82.5"
   },
   "devDependencies": {
-    "eslint": "5.7.0",
     "eslint-config-airbnb": "^17.1.0",
-    "eslint-plugin-import": "2.14.0",
-    "eslint-plugin-jest": "^21.17.0",
-    "eslint-plugin-jsx-a11y": "6.1.2",
-    "eslint-plugin-react": "7.11.1"
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^21.18.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
