@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Home Component 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "justifyContent": "center",
+      "marginLeft": 40,
+      "marginRight": 40,
+    }
+  }
+>
+  <button
+    className="ui teal button"
+    onClick={[Function]}
+    role="button"
+  >
+    Load Users
+  </button>
+</div>
+`;

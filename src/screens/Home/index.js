@@ -20,7 +20,8 @@ class Home extends Component {
     const { users } = this.props;
     return (
       <div style={styles.container}>
-        {users.length > 0 &&
+        {users.length > 0
+          && (
           <Table
             striped
           >
@@ -36,12 +37,12 @@ class Home extends Component {
             </Table.Header>
             <Table.Body>
               {users.map(({
-                 id,
-                 name,
-                 email,
-                 phone,
-                 username,
-                 website
+                id,
+                name,
+                email,
+                phone,
+                username,
+                website
               }, i) => (
                 <Table.Row key={i}>
                   <Table.Cell>{id}</Table.Cell>
@@ -53,6 +54,7 @@ class Home extends Component {
                 </Table.Row>))}
             </Table.Body>
           </Table>
+          )
         }
         <Button
           color="teal"
@@ -70,8 +72,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  getUsersSaga: () =>
-    dispatch(getUsersSaga())
+  getUsersSaga: () => dispatch(getUsersSaga())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);
