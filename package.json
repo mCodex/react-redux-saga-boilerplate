@@ -6,7 +6,7 @@
   "dependencies": {
     "connected-react-router": "^4.5.0",
     "history": "^4.7.2",
-    "react": "^16.5.2",
+    "react": "^16.6.3",
     "react-dom": "^16.5.2",
     "react-helmet": "^5.2.0",
     "react-redux": "^5.0.7",
