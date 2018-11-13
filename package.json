@@ -7,7 +7,7 @@
     "connected-react-router": "^4.5.0",
     "history": "^4.7.2",
     "react": "^16.6.2",
-    "react-dom": "^16.5.2",
+    "react-dom": "^16.6.2",
     "react-helmet": "^5.2.0",
     "react-redux": "^5.0.7",
     "react-router": "^4.3.1",
